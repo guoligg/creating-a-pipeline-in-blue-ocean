@@ -3,7 +3,7 @@ pipeline {
     docker {
       image 'node:6-alpine'
       args '''-p 3000:3000
--v /root/.jenkins/workspace/_a-pipeline-in-blue-ocean_master/node_modules:/root/node_modules'''
+-v /root/node_modules:/root/.jenkins/workspace/_a-pipeline-in-blue-ocean_master/node_modules'''
     }
 
   }
